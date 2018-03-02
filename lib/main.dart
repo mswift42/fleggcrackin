@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fleggcrackin/ui/EggCrackinHome.dart';
 
 void main() => runApp(new EggCrackinApp());
 
@@ -10,7 +11,9 @@ class EggCrackinApp extends StatefulWidget {
 class _EggCrackinAppState extends State<EggCrackinApp> {
   @override
   Widget build(BuildContext context) {
-    return new Container();
+    return Container(
+      child: new EggCrackinHome()
+    );
   }
 }
 
