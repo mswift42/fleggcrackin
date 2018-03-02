@@ -1,4 +1,4 @@
-import 'package:eggfn/services/Recipe.dart' show Recipe;
+import 'package:fleggcrackin/services/Recipe.dart' show Recipe;
 
 final List<Recipe> mockrecipes = <Recipe>[
   new Recipe(
