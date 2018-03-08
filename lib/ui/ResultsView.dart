@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fleggcrackin/services/Recipe.dart' show Recipe;
+import 'package:fleggcrackin/services/MockRecipeService.dart' show mockrecipes;
 
 class ResultsView extends StatefulWidget {
   @override
@@ -12,5 +13,13 @@ class _ResultsViewState extends State<ResultsView> {
   Widget build(BuildContext context) {
     return new Container();
   }
+
+  @override
+  void initState() {
+    super.initState();
+    _recipes = mockrecipes;
+  }
+
+
 }
 
