@@ -28,3 +28,18 @@ class _ResultsViewState extends State<ResultsView> {
 
 }
 
+class RecipeWidget extends StatelessWidget {
+  final Recipe recipe;
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      child: GridTile(
+        child: RecipeImageWidget(recipe),
+        footer: GridTileBar(
+          title: RecipeText(recipe.title),
+          subtitle: RecipeText(recipe.publisher),
+        ),
+      ),
+    );
+  }
+}
