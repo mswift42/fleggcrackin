@@ -43,3 +43,11 @@ class RecipeWidget extends StatelessWidget {
     );
   }
 }
+
+class RecipeImageWidget extends StatelessWidget {
+  final Recipe recipe;
+  @override
+  Widget build(BuildContext context) {
+    return new Container();
+  }
+}
