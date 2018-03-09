@@ -11,7 +11,12 @@ class _ResultsViewState extends State<ResultsView> {
   List<Recipe> _recipes = new List<Recipe>();
   @override
   Widget build(BuildContext context) {
-    return new Container();
+    return GridView.extent(
+      children: _recipes.map((i) => RecipeWidget
+      (
+        recipe: i
+      )).toList(),
+      maxCrossAxisExtent: 320.00);
   }
 
   @override
