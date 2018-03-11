@@ -51,3 +51,13 @@ class RecipeImageWidget extends StatelessWidget {
     return new Container();
   }
 }
+
+class RecipeText extends StatelessWidget {
+  final String text;
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      
+    );
+  }
+}
